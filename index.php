@@ -13,7 +13,9 @@
 //     }
 // }
 // }
-
+// if (isset($_GET['nombre']) && isset($_GET['edad'])) {
+//     $nombre = $_GET['nombre'];
+//     $edad = $_GET['edad'];
 ?>
 
 
@@ -36,13 +38,13 @@
         <form action="landPage.php" method="GET">
 
             <!-- Input lenght  password -->
-            <div class="">
-                <label for="passLenght" class="form-label">Lunghezza Password</label>
-                <input type="password" class="form-control" id="passLenght">
+            <div class="d-flex justify-content-between pb-3">
+                <label  class="form-label">Lunghezza Password</label>
+                <input type="text" id="passLenght" name="passLenght">
             </div>
 
 
-            <div class="d-flex">
+            <div class="d-flex justify-content-between">
                 <div>Consenti ripetizioni di uno o piu caratteri</div>
                 <div class="d-flex flex-column g-3">
                     <!-- check-radio SI -->
