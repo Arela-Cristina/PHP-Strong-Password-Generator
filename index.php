@@ -1,21 +1,8 @@
 <?php
-// BONUS-1 - Aggiungere un form ad inizio pagina che tramite una richiesta GET permetta di filtrare gli hotel che hanno un parcheggio.
-//isset sirve para verificar si existe un valor en una variable, en este caso $_GET['hasAparking'], verifica si user ha ingresado un valor en el check box.
-// if (isset($_GET['passwordLenght'])) {
-// creo un Array vacio en donde pushare los datos que voy a filtrar
-// $filteredHotels = [];
-// Hago un ciclo for each para filtrar los elementos de mi array $hotels
-// foreach ($hotels as $hotel) {
-// Luego impongo la condicion, si parking es identico a true
-// if ($hotel['parking'] === true) {
-// lo pusho en el array nuevo, esta es la sintaxis de pushar.
-//         $filteredHotels[] = $hotel;
-//     }
-// }
-// }
-// if (isset($_GET['nombre']) && isset($_GET['edad'])) {
-//     $nombre = $_GET['nombre'];
-//     $edad = $_GET['edad'];
+// impostare la lunghezza della password
+if(isset($_GET['passLenght'])){
+    
+}
 ?>
 
 
@@ -40,7 +27,7 @@
             <!-- Input lenght  password -->
             <div class="d-flex justify-content-between pb-3">
                 <label  class="form-label">Lunghezza Password</label>
-                <input type="text" id="passLenght" name="passLenght">
+                <input type="number" id="passLenght" name="passLenght">
             </div>
 
 
